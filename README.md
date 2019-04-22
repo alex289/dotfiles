@@ -27,6 +27,7 @@ or
 - mddir (via npm)
 - angular
 - create-react-app
+- Docker
 
 ### Google Chrome Extensions:
 - Wappalyzer
