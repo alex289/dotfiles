@@ -42,7 +42,8 @@ or
 
   Window Builder
 
-- Visual Studio {
+- Visual Studio 
+
   Material Theme(accent=blue)
   Material-icon Theme
   Font FiraCode (+fontLigeratures)
@@ -50,8 +51,8 @@ or
   Projects+
   Live Server
   Beautify
-}
-- Hyper {
+
+- Hyper 
+
   [Config file here](https://gist.github.com/JuzouSatoru2/2a58a7f98b475e468dd28f3c772b329f)
   (Windows Config)
-}
