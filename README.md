@@ -38,9 +38,10 @@ or
 - WinRaR
 
 ### Configuration:
-- Eclipse {
+- Eclipse
+
   Window Builder
-}
+
 - Visual Studio {
   Material Theme(accent=blue)
   Material-icon Theme
