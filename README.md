@@ -23,11 +23,7 @@ or
 
 ### Command Line Tools:
 - Git
-- npm
-- mddir (via npm)
-- angular
-- create-react-app
-- Docker
+- npm ([Installed npm packages](https://github.com/JuzouSatoru2/My-config-setup/blob/master/Npm-Packages.md))
 
 ### Google Chrome Extensions:
 - Wappalyzer
