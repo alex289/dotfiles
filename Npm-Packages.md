@@ -5,11 +5,11 @@ List with:
     npm list -g --depth 0
 
  - node-minify
- -- clean-css
- -- html-minifier
- -- uglify-js
- -- uglify-es
- --cli
+   - clean-css
+   - html-minifier
+   - uglify-js
+   - uglify-es
+   -cli
  - create-react-app
  - mddir
  - readme-md-generator
