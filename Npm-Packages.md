@@ -13,3 +13,5 @@ List with:
  - create-react-app
  - mddir
  - readme-md-generator
+ - angular
+ - docker
