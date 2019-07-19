@@ -41,13 +41,13 @@ or
 
 - Visual Studio 
 
-  Material Theme(accent=blue)
-  Material-icon Theme
-  Font FiraCode (+fontLigeratures)
-  Rainbow Brackets
-  Projects+
-  Live Server
-  Beautify
+  - Material Theme(accent=blue)
+  - Material-icon Theme
+  - Font FiraCode (+fontLigeratures)
+  - Rainbow Brackets
+  - Projects+
+  - Live Server
+  - Beautify
 
 - Hyper 
 
