@@ -9,7 +9,7 @@ List with:
    - html-minifier
    - uglify-js
    - uglify-es
-   -cli
+   - cli
  - create-react-app
  - mddir
  - readme-md-generator
