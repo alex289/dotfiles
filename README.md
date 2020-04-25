@@ -1,5 +1,10 @@
 # My development setup/configuration
 
+### Installed
+```sh
+curl -s https://raw.githubusercontent.com/JuzouSatoru2/My-config-setup/master/install.sh | bash
+```
+
 ### OS:
 - Windows 10
 or

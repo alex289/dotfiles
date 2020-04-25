@@ -24,10 +24,15 @@ sudo apt-get install npm
 sudo apt-get install yarn
 
 echo '###Install Ruby..'
-sudo apt install ruby-full
+sudo apt-get install ruby-full
 
 echo '###Install Java..'
-apt-get install default-jdk
+sudo apt-get install default-jdk
+
+echo '### Oh-my-zsh..'
+sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt install fonts-powerline
 
 echo '###Install Dotnet..'
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
