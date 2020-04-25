@@ -14,5 +14,4 @@ List with:
  - mddir
  - readme-md-generator
  - angular
- - docker
  - http-server@0.9.0
