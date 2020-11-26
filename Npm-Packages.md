@@ -4,8 +4,13 @@ List with:
 
     npm list -g --depth 0
 
- - cleancss
+ - yarn
+ - synp
+ - clean-css-cli
  - uglify-es
  - mddir
  - readme-md-generator
- - http-server@0.9.0
+ - http-server
+ - eslint
+ - npm-check-updates
+ - n (Only on wsl)

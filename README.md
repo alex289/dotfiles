@@ -1,24 +1,18 @@
 # My development setup/configuration
 
-### Installed
-```sh
-curl -s https://raw.githubusercontent.com/JuzouSatoru2/My-config-setup/master/install.sh | bash
-```
 
 ### OS:
 - Windows 10
-or
-- Linux Ubuntu
+- Linux Ubuntu WSL
 
 ### Languages:
 - Java
 - Python
-- Ruby
 - NodeJS
 
 ### Programms:
 - Visual Studio Code
-- Hyper Terminal
+- Windows Terminal
 - Notepad++
 - Github Desktop
 
@@ -28,21 +22,23 @@ or
 
 ### Command Line Tools:
 - Git
-- npm ([Installed npm packages](https://github.com/JuzouSatoru2/My-config-setup/blob/master/Npm-Packages.md))
+- Npm ([Installed npm packages](https://github.com/JuzouSatoru2/My-config-setup/blob/master/Npm-Packages.md))
 
 ### Google Chrome Extensions:
 - Wappalyzer
+- React Dev Tools
 
 ### Additional Programms:
 - Spotify
 - Discord
 - Wallpaper Engine
+- Translucent TB
 - WinRaR
 
 ### Configuration:
 - Eclipse
 
-  Window Builder
+  - Window Builder
 
 - Visual Studio 
 
@@ -53,8 +49,7 @@ or
   - Projects+
   - Live Server
   - Beautify
-
-- Hyper 
-
-  [Config file here](https://gist.github.com/JuzouSatoru2/2a58a7f98b475e468dd28f3c772b329f)
-  (Windows Config)
+  - Docker
+  - Eslint
+  - Import Cost
+  - Prettier
