@@ -39,17 +39,3 @@
 - Eclipse
 
   - Window Builder
-
-- Visual Studio 
-
-  - Material Theme(accent=blue)
-  - Material-icon Theme
-  - Font FiraCode (+fontLigeratures)
-  - Rainbow Brackets
-  - Projects+
-  - Live Server
-  - Beautify
-  - Docker
-  - Eslint
-  - Import Cost
-  - Prettier
