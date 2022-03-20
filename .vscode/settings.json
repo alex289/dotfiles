@@ -1,0 +1,35 @@
+{
+  "workbench.startupEditor": "none",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "extensions.ignoreRecommendations": true,
+  "git.confirmSync": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "git.enableSmartCommit": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "importCost.timeout": 20000,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "css.lint.unknownAtRules": "ignore",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeLensFontFamily": "Fira Code",
+  "editor.fontSize": 13,
+  "editor.bracketPairColorization.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.productIconTheme": "icons-carbon",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "angular.enable-strict-mode-prompt": false,
+  "material-icon-theme.activeIconPack": "angular_ngrx",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "conventionalCommits.showNewVersionNotes": false
+}

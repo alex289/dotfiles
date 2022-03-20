@@ -1,16 +1,12 @@
 # Npm-Packages
+
 Gobal installed npm packages.
-List with:
+List with: `npm list -g --depth 0`
 
-    npm list -g --depth 0
-
- - yarn
- - synp
- - clean-css-cli
- - uglify-es
- - mddir
- - readme-md-generator
- - http-server
- - eslint
- - npm-check-updates
- - n (Only on wsl)
+- @angular/cli
+- npm-check-updates
+- prettier
+- serve
+- tree-sitter-cli (For neovim)
+- typescript
+- yarn
