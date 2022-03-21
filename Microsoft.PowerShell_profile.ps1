@@ -13,12 +13,7 @@ Set-Alias vim nvim
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias y yarn
-
-function Matrix {
-    Import-Module ~\cmatrix
-    Set-ScreenSaverTimeout -Seconds 5
-    Enable-ScreenSaver
-}
+Set-Alias touch Net-Item
 
 function yxcv([switch]$verify = $false, [switch]$commit = $false) {
     cd ~/Code/Personal

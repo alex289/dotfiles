@@ -1,6 +1,9 @@
-# My development setup/configuration
+# My dotfiles
 
-### Programms:
+![cover](./images/cover.png)
+![nvim](./images/nvim.png)
+
+### Programms
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor
 - [Visual Studio](https://visualstudio.microsoft.com/de/) - IDE
@@ -9,7 +12,7 @@
 - [DevToys](https://devtoys.app/) - Developer Tools
 - [SQL Server Management Studio](https://docs.microsoft.com/de-de/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - Database management tool
 
-### PowerShell Tools and Clis:
+### PowerShell Tools and Clis
 
 > [Inspired by devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)
 
@@ -21,12 +24,12 @@
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - Npm ([Installed npm packages](https://github.com/Alex289/My-config-setup/blob/master/Npm-Packages.md))
 
-### Neovim:
+### Neovim setup
 
 - [AstroVim](https://github.com/kabinspace/AstroVim) - A neovim config
 - [devaslife config](https://www.youtube.com/watch?v=FW2X1CXrU1w)
 
-### Browser Extensions:
+### Browser Extensions
 
 - Wappalyzer
 - React Dev Tools
