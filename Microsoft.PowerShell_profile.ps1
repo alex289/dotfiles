@@ -1,62 +1,37 @@
-Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
+oh-my-posh prompt init pwsh --config ~/.oh-my-posh.omp.json | Invoke-Expression
 
 Import-Module Terminal-Icons
 
-Set-PSReadLineOption -EditMode Emacs
-Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
+
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 Set-Alias vim nvim
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias y yarn
-Set-Alias touch Net-Item
+Set-Alias touch New-Item
 
-function yxcv([switch]$verify = $false, [switch]$commit = $false) {
+function yxcv {
     cd ~/Code/Personal
 
     cd NextJs-Boilerplate
     ncu -u
     yarn
-    if($verify) {
-        flb
-    }
 
     cd ../Portfolio
     ncu -u
     yarn
-    if($verify) {
-        flb
-    }
-    if($commit) {
-        git add .
-        git commit -m"Update deps"
-        git push
-    }
 
     cd ../Portfolio-Test
     ncu -u
     yarn
-    if($commit) {
-        git add .
-        git commit -m"Update deps"
-        git push
-    }
 
     cd ../what-do-we-eat
     ncu -u
     yarn
-    if($verify) {
-        flb
-    }
-    if($commit) {
-        git add .
-        git commit -m"Update deps"
-        git push
-    }
 
     cd ~/Code
     ncu -g
@@ -66,6 +41,35 @@ function flb {
     yarn format
     yarn lint
     yarn build
+}
+
+function update {
+  scoop update
+  scoop update neovim
+  scoop update fzf
+  scoop update neofetch
+  
+  Update-Module oh-my-posh
+  Update-Module PSReadLine
+
+  git update-git-for-windows
+}
+
+function which ($command) {
+  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+}
+
+Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('flb')
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+}
+
+Set-PSReadLineKeyHandler -Chord Ctrl+u -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('yxcv')
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 
 clear
