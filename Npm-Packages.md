@@ -10,3 +10,4 @@ List with: `npm list -g --depth 0`
 - tree-sitter-cli (For neovim)
 - typescript
 - yarn
+- nvm

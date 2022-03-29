@@ -48,9 +48,12 @@ function update {
   scoop update neovim
   scoop update fzf
   scoop update neofetch
-  
+  scoop update nvm
+
   Update-Module oh-my-posh
   Update-Module PSReadLine
+
+  nvm install lts
 
   git update-git-for-windows
 }
