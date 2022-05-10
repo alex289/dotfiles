@@ -11,3 +11,5 @@ List with: `npm list -g --depth 0`
 - typescript
 - yarn
 - nvm
+- speed-test
+

@@ -1,5 +1,4 @@
-Import-Module oh-my-posh
-oh-my-posh prompt init pwsh --config ~/.oh-my-posh.omp.json | Invoke-Expression
+oh-my-posh init pwsh --config ~/.oh-my-posh.omp.json | Invoke-Expression
 
 Import-Module Terminal-Icons
 
@@ -45,12 +44,12 @@ function flb {
 
 function update {
   scoop update
+  scoop update oh-my-posh
   scoop update neovim
   scoop update fzf
   scoop update neofetch
   scoop update nvm
 
-  Update-Module oh-my-posh
   Update-Module PSReadLine
 
   nvm install lts
@@ -72,6 +71,12 @@ Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
 Set-PSReadLineKeyHandler -Chord Ctrl+u -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert('yxcv')
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+}
+
+Set-PSReadLineKeyHandler -Chord Ctrl+q -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('exit')
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 
