@@ -62,6 +62,10 @@ function which ($command) {
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
+function transfer ($file) {
+    curl -H "Max-Downloads: 1" -H "Max-Days: 5" --upload-file $file https://transfer.sh/$file
+}
+
 Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert('flb')
