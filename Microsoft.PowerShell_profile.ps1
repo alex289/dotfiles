@@ -7,10 +7,12 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
-Set-Alias vim nvim
+Set-Alias v nvim
+Set-Alias vs devenv
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias y yarn
+Set-Alias p pnpm
 Set-Alias touch New-Item
 
 function yxcv {
@@ -37,9 +39,9 @@ function yxcv {
 }
 
 function flb {
-    yarn format
-    yarn lint
-    yarn build
+    pnpm format
+    pnpm lint
+    pnpm build
 }
 
 function update {
