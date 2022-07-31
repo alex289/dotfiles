@@ -13,30 +13,8 @@ Set-Alias ll ls
 Set-Alias g git
 Set-Alias y yarn
 Set-Alias p pnpm
+Set-Alias c code
 Set-Alias touch New-Item
-
-function yxcv {
-    cd ~/Code/Personal
-
-    cd NextJs-Boilerplate
-    ncu -u
-    yarn
-
-    cd ../Portfolio
-    ncu -u
-    yarn
-
-    cd ../Portfolio-Test
-    ncu -u
-    yarn
-
-    cd ../what-do-we-eat
-    ncu -u
-    yarn
-
-    cd ~/Code
-    ncu -g
-}
 
 function flb {
     pnpm format
@@ -45,18 +23,17 @@ function flb {
 }
 
 function update {
-  scoop update
-  scoop update oh-my-posh
-  scoop update neovim
-  scoop update fzf
-  scoop update neofetch
-  scoop update nvm
+    scoop update
+    scoop update oh-my-posh
+    scoop update neovim
+    scoop update fzf
+    scoop update neofetch
+    scoop update nvm
+    scoop update pnpm
 
-  Update-Module PSReadLine
+    Update-Module PSReadLine
 
-  nvm install lts
-
-  git update-git-for-windows
+    git update-git-for-windows
 }
 
 function which ($command) {
@@ -71,12 +48,6 @@ function transfer ($file) {
 Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert('flb')
-    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
-}
-
-Set-PSReadLineKeyHandler -Chord Ctrl+u -ScriptBlock {
-    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('yxcv')
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 
