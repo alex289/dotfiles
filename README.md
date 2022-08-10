@@ -27,7 +27,7 @@
 ### Neovim setup
 
 - [AstroVim](https://github.com/kabinspace/AstroVim) - A neovim config
-- [devaslife config](https://www.youtube.com/watch?v=FW2X1CXrU1w)
+- I added a configuration to feline to show the current vim mode (See `nvim/lua/user/plugins/feline.lua`)
 
 ### Browser Extensions
 
