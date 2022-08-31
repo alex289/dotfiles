@@ -21,8 +21,9 @@
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine
 - [Terminal Icons](https://github.com/devblackops/Terminal-Icons) - Folder and file icons
 - [PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/) - Cmdlets for customizing the editing environment, used for autocompletion
+- bat - Better cat command
 - [z](https://www.powershellgallery.com/packages/z) - Directory jumper
-- Npm ([Installed npm packages](https://github.com/Alex289/My-config-setup/blob/master/Npm-Packages.md))
+- npm ([Installed npm packages](https://github.com/Alex289/My-config-setup/blob/master/npm-Packages.md))
 
 ### Neovim setup
 
