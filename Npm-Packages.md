@@ -1,4 +1,4 @@
-# Npm-Packages
+# npm-Packages
 
 Gobal installed npm packages.
 List with: `npm list -g --depth 0`
@@ -12,4 +12,5 @@ List with: `npm list -g --depth 0`
 - yarn
 - pnpm
 - speed-test
+- case-police
 
