@@ -8,13 +8,17 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 Set-Alias v nvim
-Set-Alias vs devenv
 Set-Alias ll ls
 Set-Alias g git
 Set-Alias y yarn
 Set-Alias p pnpm
 Set-Alias c code
 Set-Alias touch New-Item
+
+function vs {
+    $solutionFile = (Get-ChildItem -Path .\ -Filter *.sln -File | ForEach-Object { $_.Name })
+    devenv $solutionFile
+}
 
 function flb {
     pnpm format
