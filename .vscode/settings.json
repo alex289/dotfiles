@@ -17,7 +17,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "importCost.timeout": 20000,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
   "terminal.integrated.fontSize": 13,
   "css.lint.unknownAtRules": "ignore",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -30,10 +29,7 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "angular.enable-strict-mode-prompt": false,
   "material-icon-theme.activeIconPack": "angular_ngrx",
-  "workbench.colorTheme": "One Dark Pro",
-  "conventionalCommits.showNewVersionNotes": false,
   "prettier.singleQuote": true,
   "terminal.integrated.minimumContrastRatio": 1,
   "gitlens.advanced.fileHistoryFollowsRenames": true,
@@ -51,5 +47,13 @@
   "github.copilot.enable": {
     "*": true
   },
-  "window.commandCenter": true
+  "window.commandCenter": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "Fira Code",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "Learn with Sumit - Vintage"
 }
