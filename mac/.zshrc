@@ -28,7 +28,6 @@ alias y="yarn"
 alias c="code"
 alias ll="exa --icons --long -a --group-directories-first --git"
 
-
 gpgconf --kill gpg-agent
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
