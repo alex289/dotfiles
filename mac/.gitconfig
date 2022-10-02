@@ -1,0 +1,10 @@
+[user]
+	name = alex289
+	email = mccr4fthd@gmail.com
+	signingKey = 2D87F863
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
