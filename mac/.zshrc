@@ -28,9 +28,5 @@ alias y="yarn"
 alias c="code"
 alias ll="exa --icons --long -a --group-directories-first --git"
 
-gpgconf --kill gpg-agent
-export GPG_TTY=$(tty)
-gpgconf --launch gpg-agent
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

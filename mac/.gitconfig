@@ -1,7 +1,7 @@
 [user]
 	name = alex289
-	email = mccr4fthd@gmail.com
-	signingKey = 2D87F863
+	email = EMAIL_HERE
+	signingKey = SIGN_KEY
 [commit]
 	gpgSign = true
 [tag]
