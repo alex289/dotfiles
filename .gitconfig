@@ -8,3 +8,7 @@
 	gpgSign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
