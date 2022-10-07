@@ -1,4 +1,9 @@
 return {
+  options = {
+    opt = {
+      cmdheight = 1,
+    },
+  },
   plugins = {
     heirline = function(config)
       -- the first element of the default configuration table is the statusline
@@ -22,4 +27,3 @@ return {
     end,
   },
 }
-
