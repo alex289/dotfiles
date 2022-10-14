@@ -25,5 +25,8 @@ return {
       -- return the final configuration table
       return config
     end,
+    init = {
+      { "github/copilot.vim" }
+    }
   },
 }
