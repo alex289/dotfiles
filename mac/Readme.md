@@ -10,6 +10,7 @@
 - [Stats](https://github.com/exelban/stats) - Menu bar stats
 - [Rectangle](https://rectangleapp.com) - Window resize tool
 - [Homebrew](https://brew.sh) - Mac package manager
+- [Nvm](https://github.com/nvm-sh/nvm) - Node version manager
 
 ### Homebrew packages
 
