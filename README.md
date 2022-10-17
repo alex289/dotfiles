@@ -23,7 +23,7 @@
 ### Neovim setup
 
 - [AstroVim](https://github.com/kabinspace/AstroVim) - A neovim config
-- I added a configuration to feline to show the current vim mode (See `nvim/lua/user/plugins/feline.lua`)
+- I added a configuration to to show the current vim mode (See `nvim/`)
 
 ### Browser Extensions
 
