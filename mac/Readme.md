@@ -11,6 +11,7 @@
 - [Rectangle](https://rectangleapp.com) - Window resize tool
 - [Homebrew](https://brew.sh) - Mac package manager
 - [Nvm](https://github.com/nvm-sh/nvm) - Node version manager
+- [Alt-tab](https://alt-tab-macos.netlify.app) - Window manager
 
 ### Homebrew packages
 
