@@ -3,6 +3,9 @@ return {
     opt = {
       cmdheight = 1,
     },
+    g = {
+      copilot_no_tab_map = true,
+    },
   },
   plugins = {
     heirline = function(config)
@@ -29,4 +32,8 @@ return {
       { "github/copilot.vim" }
     }
   },
+  polish = function()
+    local copilot_options = { silent = true, expr = true, script = true }
+    vim.api.nvim_set_keymap("i", "öö", "copilot#Accept(<Tab>)", copilot_options)
+  end,
 }
