@@ -30,6 +30,11 @@ alias ll="exa --icons --long -a --group-directories-first --git"
 alias flb="p format && p lint && p build"
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; "
 
+alias ip="ipconfig getifaddr en0"
+alias externIp="curl ifconfig.me"
+alias ..="cd .."
+alias zshrc="code ~/.zshrc"
+
 export GPG_TTY=$(tty)
 
 export NVM_DIR="$HOME/.nvm"
