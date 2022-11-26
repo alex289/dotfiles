@@ -28,14 +28,11 @@ function flb {
 
 function update {
     scoop update
-    scoop update oh-my-posh
     scoop update neovim
     scoop update fzf
     scoop update neofetch
     scoop update nvm
     scoop update pnpm
-
-    Update-Module PSReadLine
 
     git update-git-for-windows
 }

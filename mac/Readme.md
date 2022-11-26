@@ -24,3 +24,4 @@
 - pinentry-mac
 - ripgrep (for neovim)
 - wget
+- tmux

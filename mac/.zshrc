@@ -21,12 +21,16 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/z.sh
 
+# command aliases
 alias g="git"
 alias v="nvim"
 alias p="pnpm"
 alias y="yarn"
 alias c="code"
 alias ll="exa --icons --long -a --group-directories-first --git"
+alias tm="tmux"
+
+# combination aliases
 alias flb="p format && p lint && p build"
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; "
 
