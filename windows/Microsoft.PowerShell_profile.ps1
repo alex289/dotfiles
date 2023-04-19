@@ -46,6 +46,20 @@ function transfer ($file) {
     curl -H "Max-Downloads: 1" -H "Max-Days: 5" --upload-file $file https://transfer.sh/$file
 }
 
+function merge {
+    param(
+        [string]$branchName = "develop"
+    )
+
+    $latestBranch = git rev-parse --abbrev-ref HEAD
+
+    git checkout $branchName
+    git pull
+
+    git checkout $latestBranch
+    git merge $branchName
+}
+
 Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert('flb')
