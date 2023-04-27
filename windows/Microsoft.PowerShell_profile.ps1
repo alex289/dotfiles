@@ -72,4 +72,39 @@ Set-PSReadLineKeyHandler -Chord Ctrl+q -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 
+function ?? { 
+    $TmpFile = New-TemporaryFile
+    github-copilot-cli what-the-shell ('use powershell to ' + $args) --shellout $TmpFile
+    if ([System.IO.File]::Exists($TmpFile)) { 
+        $TmpFileContents = Get-Content $TmpFile
+            if ($TmpFileContents -ne $nill) {
+            Invoke-Expression $TmpFileContents
+            Remove-Item $TmpFile
+        }
+    }
+}
+ 
+function git? {
+    $TmpFile = New-TemporaryFile
+    github-copilot-cli git-assist $args --shellout $TmpFile
+    if ([System.IO.File]::Exists($TmpFile)) {
+        $TmpFileContents = Get-Content $TmpFile
+            if ($TmpFileContents -ne $nill) {
+            Invoke-Expression $TmpFileContents
+            Remove-Item $TmpFile
+        }
+    }
+}
+function gh? {
+    $TmpFile = New-TemporaryFile
+    github-copilot-cli gh-assist $args --shellout $TmpFile
+    if ([System.IO.File]::Exists($TmpFile)) {
+        $TmpFileContents = Get-Content $TmpFile
+            if ($TmpFileContents -ne $nill) {
+            Invoke-Expression $TmpFileContents
+            Remove-Item $TmpFile
+        }
+    }
+}
+
 clear
