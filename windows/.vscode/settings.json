@@ -1,5 +1,6 @@
 {
   "workbench.startupEditor": "none",
+  "editor.accessibilitySupport": "off",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -46,9 +47,6 @@
   "editor.cursorBlinking": "smooth",
   "l13Projects.git.folders": ["C:\\Users\\Alexander.Konietzko\\dev"],
   "l13Projects.git.maxDepthRecursion": 5,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "workbench.colorCustomizations": {
     "activityBar.activeBorder": "#6366f1",
     "activityBarBadge.background": "#6366f1",
