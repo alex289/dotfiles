@@ -1,0 +1,7 @@
+[
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    }
+]

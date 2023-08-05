@@ -1,6 +1,7 @@
 oh-my-posh init pwsh --config ~/.oh-my-posh.omp.json | Invoke-Expression
 
 Import-Module Terminal-Icons
+Import-Module PSFzf
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
@@ -14,6 +15,7 @@ Set-Alias y yarn
 Set-Alias p pnpm
 Set-Alias c code
 Set-Alias touch New-Item
+Set-Alias .. GoUp
 
 function vs {
     $solutionFile = (Get-ChildItem -Path .\ -Filter *.sln -File | ForEach-Object { $_.Name })
@@ -30,8 +32,6 @@ function update {
     scoop update
     scoop update neovim
     scoop update fzf
-    scoop update neofetch
-    scoop update nvm
     scoop update pnpm
 
     git update-git-for-windows
@@ -105,6 +105,10 @@ function gh? {
             Remove-Item $TmpFile
         }
     }
+}
+
+function GoUp {
+    Set-Location ..
 }
 
 clear
