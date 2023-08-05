@@ -25,7 +25,6 @@
   "editor.bracketPairColorization.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.productIconTheme": "icons-carbon",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
@@ -52,7 +51,7 @@
     "FIG_NEW_SESSION": "1"
   },
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "smooth",
   "editor.accessibilitySupport": "off",
   "workbench.colorTheme": "Learn with Sumit - Vintage"

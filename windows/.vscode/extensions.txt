@@ -1,5 +1,4 @@
 Angular.ng-template
-antfu.icons-carbon
 astro-build.astro-vscode
 bradlc.vscode-tailwindcss
 dbaeumer.vscode-eslint
@@ -13,7 +12,5 @@ oderwat.indent-rainbow
 PKief.material-icon-theme
 Prisma.prisma
 shardulm94.trailing-spaces
-SumitSaha.learn-with-sumit-theme
 usernamehw.errorlens
 VisualStudioExptTeam.vscodeintellicode
-wix.vscode-import-cost

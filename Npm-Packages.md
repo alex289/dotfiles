@@ -7,9 +7,8 @@ List with: `npm list -g --depth 0`
 - prettier
 - eslint
 - serve
-- tree-sitter-cli (For neovim)
 - typescript
 - yarn
 - pnpm
-- speed-test
 - case-police
+- @githubnext/github-copilot-cli

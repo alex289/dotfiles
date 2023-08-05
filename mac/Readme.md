@@ -10,8 +10,8 @@
 - [Stats](https://github.com/exelban/stats) - Menu bar stats
 - [Rectangle](https://rectangleapp.com) - Window resize tool
 - [Homebrew](https://brew.sh) - Mac package manager
-- [Nvm](https://github.com/nvm-sh/nvm) - Node version manager
 - [Alt-tab](https://alt-tab-macos.netlify.app) - Window manager
+- [Rider](https://www.jetbrains.com/rider/) - C# IDE
 
 ### Homebrew packages
 
@@ -25,3 +25,5 @@
 - ripgrep (for neovim)
 - wget
 - tmux
+- zoxide
+- neofetch

@@ -11,23 +11,22 @@
 - [DevToys](https://devtoys.app/) - Developer Tools
 - [Google Chrome](https://www.google.com/intl/de_de/chrome/) - Browser for development
 - [Notion](https://www.notion.so) - Documentation and writing tool
+- [Docker](https://www.docker.com/) - Containerization
 
 ### Command line tools
 
 > [Inspired by devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)
 
 - bat - Better cat command
-- [z](https://www.powershellgallery.com/packages/z) - Directory jumper
 - npm ([Installed npm packages](https://github.com/Alex289/My-config-setup/blob/master/Npm-Packages.md))
 
 ### Neovim setup
 
-- [AstroVim](https://github.com/kabinspace/AstroVim) - A neovim config
-- I added a configuration to to show the current vim mode (See `nvim/`)
+- [AstroVim](https://github.com/AstroNvim/AstroNvim) - A neovim config
+- I added a configuration to to show the current vim mode (See my config [here](https://github.com/alex289/astronvim_config))
 
 ### Browser Extensions
 
-- Wappalyzer
 - JSON Formatter
 - daily.dev
 - 1Password

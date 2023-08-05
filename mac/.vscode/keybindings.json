@@ -1,0 +1,6 @@
+[
+  {
+    "key": "cmd+[Semicolon]",
+    "command": "workbench.action.terminal.new"
+  }
+]
