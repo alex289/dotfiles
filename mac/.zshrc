@@ -32,6 +32,7 @@ alias ..="cd .."
 alias zshrc="code ~/.zshrc"
 alias ip="ipconfig getifaddr en0"
 alias externIp="curl ifconfig.me"
+alias start="open"
 
 export GPG_TTY=$(tty)
 
