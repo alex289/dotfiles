@@ -5,11 +5,14 @@ eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.auto-rename-tag
 GitHub.copilot
+GitHub.copilot-chat
+lokalise.i18n-ally
 meganrogge.template-string-converter
 naumovs.color-highlight
 oderwat.indent-rainbow
 PKief.material-icon-theme
 Prisma.prisma
+richie5um2.vscode-statusbar-json-path
 shardulm94.trailing-spaces
 unifiedjs.vscode-mdx
 usernamehw.errorlens

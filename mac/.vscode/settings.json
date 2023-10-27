@@ -21,15 +21,16 @@
     ".angular": true,
     ".next": true,
     ".swc": true,
-    "**/.idea": true,
+    "**/.idea": true
   },
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
   },
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "importCost.timeout": 20000,
@@ -67,7 +68,7 @@
     "statusBarItem.remoteBackground": "#6366f1",
     "tab.activeBorderTop": "#6366f1",
     "terminal.tab.activeBorder": "#6366f1",
-    "welcomePage.progress.foreground": "#6366f1",
+    "welcomePage.progress.foreground": "#6366f1"
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,

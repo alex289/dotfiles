@@ -12,6 +12,7 @@
 - [Homebrew](https://brew.sh) - Mac package manager
 - [Alt-tab](https://alt-tab-macos.netlify.app) - Window manager
 - [Rider](https://www.jetbrains.com/rider/) - C# IDE
+- [Arc](https://arc.net) - Web browser
 
 ### Homebrew packages
 
@@ -27,3 +28,5 @@
 - tmux
 - zoxide
 - neofetch
+- k9s
+- tmux
