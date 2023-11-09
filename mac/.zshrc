@@ -33,6 +33,7 @@ alias zshrc="code ~/.zshrc"
 alias ip="ipconfig getifaddr en0"
 alias externIp="curl ifconfig.me"
 alias start="open"
+alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
 
 export GPG_TTY=$(tty)
 
