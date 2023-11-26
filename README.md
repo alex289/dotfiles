@@ -7,9 +7,7 @@
 ### Programms
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor
-- [Postman](https://www.postman.com/) - HTTP Client
 - [DevToys](https://devtoys.app/) - Developer Tools
-- [Google Chrome](https://www.google.com/intl/de_de/chrome/) - Browser for development
 - [Notion](https://www.notion.so) - Documentation and writing tool
 - [Docker](https://www.docker.com/) - Containerization
 
