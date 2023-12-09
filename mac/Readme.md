@@ -29,4 +29,3 @@
 - zoxide
 - neofetch
 - k9s
-- tmux
