@@ -67,7 +67,7 @@ alias gsl='git stash list'
 export GPG_TTY=$(tty)
 
 eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow  --disable-ctrl-r)"
 eval "$(github-copilot-cli alias -- "$0")"
 
 # bun completions
