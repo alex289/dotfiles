@@ -29,3 +29,4 @@
 - zoxide
 - neofetch
 - k9s
+- atuin

@@ -18,7 +18,6 @@ source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias g="git"
 alias v="nvim"
 alias p="pnpm"
 alias y="yarn"
@@ -68,7 +67,7 @@ alias gsl='git stash list'
 export GPG_TTY=$(tty)
 
 eval "$(zoxide init zsh)"
-
+eval "$(atuin init zsh)"
 eval "$(github-copilot-cli alias -- "$0")"
 
 # bun completions
