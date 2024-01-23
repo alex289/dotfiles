@@ -30,3 +30,4 @@
 - neofetch
 - k9s
 - atuin
+- lazygit
