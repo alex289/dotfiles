@@ -31,3 +31,4 @@
 - k9s
 - atuin
 - lazygit
+- jq
