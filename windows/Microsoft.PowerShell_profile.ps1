@@ -111,4 +111,6 @@ function GoUp {
     Set-Location ..
 }
 
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
 clear
