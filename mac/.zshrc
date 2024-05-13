@@ -72,7 +72,15 @@ export GPG_TTY=$(tty)
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow  --disable-ctrl-r)"
-eval "$(github-copilot-cli alias -- "$0")"
+
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # bun completions
 [ -s "/Users/alex/.bun/_bun" ] && source "/Users/alex/.bun/_bun"

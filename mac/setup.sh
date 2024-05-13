@@ -19,4 +19,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/alex289/astronvim_config.git ~/.config/nvim/lua/user
 
 # Install node packages
-npm install -g npm-check-updates prettier eslint serve typescript yarn pnpm case-police @githubnext/github-copilot-cli
+npm install -g npm-check-updates prettier eslint serve typescript yarn pnpm case-police
