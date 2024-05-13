@@ -33,3 +33,4 @@
 - lazygit
 - jq
 - yazi
+- tokei
