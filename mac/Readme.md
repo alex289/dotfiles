@@ -32,3 +32,4 @@
 - atuin
 - lazygit
 - jq
+- yazi
