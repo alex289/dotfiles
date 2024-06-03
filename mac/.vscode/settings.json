@@ -43,9 +43,6 @@
   "terminal.external.linuxExec": "ITerm.app",
   "terminal.external.osxExec": "ITerm.app",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.minimumContrastRatio": 1,

@@ -4,7 +4,6 @@
 
 ### Programs
 
-- [Fig](https://fig.io) - Terminal autocompletion
 - [ITerm2](https://iterm2.com) - Terminal Emulator
 - [Raycast](https://www.raycast.com) - Better Spotlight
 - [Stats](https://github.com/exelban/stats) - Menu bar stats

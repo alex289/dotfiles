@@ -10,7 +10,7 @@ mkdir ~/dev
 # Install some packages
 brew install git node neovim bat exa gnupg pinentry-mac ripgrep wget tmux zoxide neofetch k9s atuin lazygit yazi ffmpegthumbnailer unar jq poppler fd fzf tokei
 
-brew install --cask visual-studio-code google-chrome notion spotify rectangle alt-tab devtoys stats raycast iterm2 arc fig
+brew install --cask visual-studio-code google-chrome notion spotify rectangle alt-tab devtoys stats raycast iterm2 arc
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

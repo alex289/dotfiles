@@ -18,6 +18,5 @@ unifiedjs.vscode-mdx
 usernamehw.errorlens
 VisualStudioExptTeam.vscodeintellicode
 Vue.volar
-withfig.fig
 wix.vscode-import-cost
 yoavbls.pretty-ts-errors
