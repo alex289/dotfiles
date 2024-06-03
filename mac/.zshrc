@@ -1,3 +1,17 @@
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+if [[ -f "/opt/homebrew/bin/brew" ]] then
+  # If you're using macOS, you'll want this enabled
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+eval "$(zoxide init --cmd cd zsh)"
+eval "$(atuin init zsh  --disable-up-arrow  --disable-ctrl-r)"
+
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -6,6 +20,7 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
+    fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -21,10 +36,6 @@ alias flb="p format && p lint && p build"
 alias tm="tmux"
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; "
 alias ..="cd .."
-alias ...="cd ../../"
-alias .3="cd ../../../"
-alias .4="cd ../../../../"
-alias .5="cd ../../../../../"
 alias zshrc="code ~/.zshrc"
 alias ip="ipconfig getifaddr en0"
 alias externIp="curl ifconfig.me"
@@ -62,10 +73,16 @@ alias gss='git stash save'
 alias gsp='git stash pop'
 alias gsl='git stash list'
 
-export GPG_TTY=$(tty)
+eval "$(fzf --zsh)"
 
-eval "$(zoxide init zsh)"
-eval "$(atuin init zsh --disable-up-arrow  --disable-ctrl-r)"
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+export GPG_TTY=$(tty)
 
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
