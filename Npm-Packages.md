@@ -11,4 +11,3 @@ List with: `npm list -g --depth 0`
 - yarn
 - pnpm
 - case-police
-- @githubnext/github-copilot-cli
