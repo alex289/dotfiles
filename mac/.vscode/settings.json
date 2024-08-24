@@ -161,5 +161,6 @@
   "explorer.confirmDelete": false,
   "workbench.settings.editor": "json",
   "explorer.compactFolders": false,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "scm.showHistoryGraph": false
 }
