@@ -8,7 +8,7 @@ xcode-select --install
 mkdir ~/dev
 
 # Install some packages
-brew install git node neovim bat exa gnupg pinentry-mac ripgrep wget tmux zoxide neofetch k9s atuin lazygit yazi ffmpegthumbnailer unar jq poppler fd fzf tokei jandedobbeleer/oh-my-posh/oh-my-posh
+brew install git node neovim bat exa gnupg pinentry-mac ripgrep wget tmux zoxide neofetch k9s atuin lazygit yazi ffmpegthumbnailer unar jq poppler fd fzf tokei jandedobbeleer/oh-my-posh/oh-my-posh delta
 
 brew install --cask visual-studio-code google-chrome notion spotify rectangle alt-tab devtoys stats raycast iterm2 arc
 

@@ -33,3 +33,4 @@
 - jq
 - yazi
 - tokei
+- delta
