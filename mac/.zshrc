@@ -23,6 +23,8 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/zen.toml)"
 fi
 
+export PATH="$HOME/go/bin:$PATH"
+
 alias v="nvim"
 alias p="pnpm"
 alias y="yarn"
