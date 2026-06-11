@@ -5,9 +5,8 @@ List with: `npm list -g --depth 0`
 
 - npm-check-updates
 - prettier
-- eslint
+- oxlint
 - serve
 - typescript
-- yarn
 - pnpm
 - case-police

@@ -8,12 +8,9 @@
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor
 - [DevToys](https://devtoys.app/) - Developer Tools
-- [Notion](https://www.notion.so) - Documentation and writing tool
 - [Docker](https://www.docker.com/) - Containerization
 
 ### Command line tools
-
-> [Inspired by devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)
 
 - bat - Better cat command
 - npm ([Installed npm packages](https://github.com/Alex289/My-config-setup/blob/master/Npm-Packages.md))
@@ -25,7 +22,7 @@
 
 ### Browser Extensions
 
-- JSON Formatter
-- daily.dev
 - 1Password
 - AdBlocker
+- Material Icons for GitHub
+- Refined GitHub

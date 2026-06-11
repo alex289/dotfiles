@@ -10,8 +10,6 @@
 
 ### PowerShell Tools and Clis
 
-> [Inspired by devaslife](https://www.youtube.com/watch?v=5-aK2_WwrmM)
-
 - [Scoop](https://scoop.sh/) - A command-line installer
 - [Git for Windows](https://gitforwindows.org/)
 - [Oh My Posh](https://ohmyposh.dev/) - Prompt theme engine

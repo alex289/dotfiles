@@ -29,7 +29,7 @@ alias v="nvim"
 alias p="pnpm"
 alias y="yarn"
 alias c="code ."
-alias ll="exa --icons --long -a --group-directories-first --git"
+alias ll="eza --icons --long -a --group-directories-first --git"
 alias flb="p format && p lint && p build"
 alias tm="tmux"
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; "
@@ -104,9 +104,33 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+function merge {
+    local branchName=${1:-"main"}
+    local latestBranch=$(git rev-parse --abbrev-ref HEAD)
+
+    git checkout "$branchName"
+    git pull
+
+    git checkout "$latestBranch"
+    git merge "$branchName"
+}
+
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+
 # bun completions
 [ -s "/Users/alex/.bun/_bun" ] && source "/Users/alex/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/alex/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+. "$HOME/.local/bin/env"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
