@@ -37,8 +37,6 @@ alias ..="cd .."
 alias zshrc="code ~/.zshrc"
 alias ip="ipconfig getifaddr en0"
 alias externIp="curl ifconfig.me"
-alias tiling-start="yabai --start-service && skhd --start-service"
-alias tiling-stop="yabai --stop-service && skhd --stop-service"
 alias start="open"
 alias search="find . -type f -not -path './.git/*' -not -path './node_modules/*' | fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
 
@@ -95,15 +93,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 export GPG_TTY=$(tty)
 
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
-
 function merge {
     local branchName=${1:-"main"}
     local latestBranch=$(git rev-parse --abbrev-ref HEAD)
@@ -117,12 +106,6 @@ function merge {
 
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 
-# bun completions
-[ -s "/Users/alex/.bun/_bun" ] && source "/Users/alex/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/alex/.docker/completions $fpath)
 autoload -Uz compinit
