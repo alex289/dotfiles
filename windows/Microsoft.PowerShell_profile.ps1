@@ -11,7 +11,6 @@ Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 Set-Alias v nvim
 Set-Alias ll ls
 Set-Alias g git
-Set-Alias y yarn
 Set-Alias p pnpm
 Set-Alias c code
 Set-Alias touch New-Item
@@ -20,12 +19,6 @@ Set-Alias .. GoUp
 function vs {
     $solutionFile = (Get-ChildItem -Path .\ -Filter *.sln -File | ForEach-Object { $_.Name })
     devenv $solutionFile
-}
-
-function flb {
-    pnpm format
-    pnpm lint
-    pnpm build
 }
 
 function update {
@@ -42,13 +35,9 @@ function which ($command) {
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-function transfer ($file) {
-    curl -H "Max-Downloads: 1" -H "Max-Days: 5" --upload-file $file https://transfer.sh/$file
-}
-
 function merge {
     param(
-        [string]$branchName = "develop"
+        [string]$branchName = "main"
     )
 
     $latestBranch = git rev-parse --abbrev-ref HEAD
@@ -60,51 +49,10 @@ function merge {
     git merge $branchName
 }
 
-Set-PSReadLineKeyHandler -Chord Ctrl+b -ScriptBlock {
-    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-    [Microsoft.PowerShell.PSConsoleReadLine]::Insert('flb')
-    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
-}
-
 Set-PSReadLineKeyHandler -Chord Ctrl+q -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert('exit')
     [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
-}
-
-function ?? {
-    $TmpFile = New-TemporaryFile
-    github-copilot-cli what-the-shell ('use powershell to ' + $args) --shellout $TmpFile
-    if ([System.IO.File]::Exists($TmpFile)) {
-        $TmpFileContents = Get-Content $TmpFile
-            if ($TmpFileContents -ne $nill) {
-            Invoke-Expression $TmpFileContents
-            Remove-Item $TmpFile
-        }
-    }
-}
-
-function git? {
-    $TmpFile = New-TemporaryFile
-    github-copilot-cli git-assist $args --shellout $TmpFile
-    if ([System.IO.File]::Exists($TmpFile)) {
-        $TmpFileContents = Get-Content $TmpFile
-            if ($TmpFileContents -ne $nill) {
-            Invoke-Expression $TmpFileContents
-            Remove-Item $TmpFile
-        }
-    }
-}
-function gh? {
-    $TmpFile = New-TemporaryFile
-    github-copilot-cli gh-assist $args --shellout $TmpFile
-    if ([System.IO.File]::Exists($TmpFile)) {
-        $TmpFileContents = Get-Content $TmpFile
-            if ($TmpFileContents -ne $nill) {
-            Invoke-Expression $TmpFileContents
-            Remove-Item $TmpFile
-        }
-    }
 }
 
 function GoUp {
