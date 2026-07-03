@@ -2,9 +2,10 @@
 
 ### Programms
 
+- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
 - [Visual Studio](https://visualstudio.microsoft.com/de/) - IDE
 - [Windows Terminal](https://github.com/microsoft/terminal)
-- [SQL Server Management Studio](https://docs.microsoft.com/de-de/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) - Database management tool
+- [SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/install/install) - Database management tool
 
 ### PowerShell Tools and Clis
 

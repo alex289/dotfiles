@@ -4,9 +4,10 @@ dbaeumer.vscode-eslint
 eamodio.gitlens
 esbenp.prettier-vscode
 formulahendry.auto-rename-tag
-GitHub.copilot
 oderwat.indent-rainbow
 PKief.material-icon-theme
 shardulm94.trailing-spaces
 usernamehw.errorlens
+alexanderkonietzko.open-pull-request-creator
+yoavbls.pretty-ts-errors
 VisualStudioExptTeam.vscodeintellicode

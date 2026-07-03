@@ -2,6 +2,7 @@
 
 ### Programms
 
+- [Helium](https://helium.computer/) - Web browser
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor
 - [DevToys](https://devtoys.app/) - Developer Tools
 - [Docker](https://www.docker.com/) - Containerization

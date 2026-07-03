@@ -10,6 +10,7 @@
 - [Alt-tab](https://alt-tab-macos.netlify.app) - Window manager
 - [Rider](https://www.jetbrains.com/rider/) - C# IDE
 - [Helium](https://helium.computer/) - Web browser
+- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
 
 ### Homebrew packages
 
