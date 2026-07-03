@@ -1,7 +1,5 @@
 # Windows dotfiles
 
-![windows](../images/windows.png)
-
 ### Programms
 
 - [Visual Studio](https://visualstudio.microsoft.com/de/) - IDE

@@ -1,9 +1,5 @@
 # My dotfiles
 
-![windows](./images/windows.png)
-![mac](./images/mac.png)
-![nvim](./images/nvim.png)
-
 ### Programms
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Code editor

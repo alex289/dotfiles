@@ -9,4 +9,4 @@ List with: `npm list -g --depth 0`
 - serve
 - typescript
 - pnpm
-- case-police
+- ccusage

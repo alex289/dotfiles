@@ -1,7 +1,5 @@
 # Mac dotfiles
 
-![mac](../images/mac.png)
-
 ### Programs
 
 - [Ghostty](https://ghostty.org/) - Terminal Emulator
